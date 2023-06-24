@@ -11,7 +11,7 @@ package Entidad;
  */
 public class FiguraGeometrica {
     
-     private String figuraGeometrica;
+    private String figuraGeometrica;
     private double baseLado;
     private double alturaApotema;
     private double ladoA;
