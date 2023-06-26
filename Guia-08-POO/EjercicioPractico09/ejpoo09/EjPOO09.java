@@ -20,7 +20,12 @@ public class EjPOO09 {
     public static void main(String[] args) {
         
         MatematicaService matematicaService = new MatematicaService();
-        Matematica numeros = new Matematica(generarNumAleatorio(-100,100), generarNumAleatorio(-100,100));
+        Matematica numeros = new Matematica();
+        
+        double num1 = generarNumAleatorio(-100,100);
+        numeros.setNum1(num1);
+        double num2 = generarNumAleatorio(-100,100);
+        numeros.setNum2(num2);
 
         System.out.println("Los números generados son: " + numeros.getNum1() + " y " + numeros.getNum2() + ".");
         System.out.println("");
