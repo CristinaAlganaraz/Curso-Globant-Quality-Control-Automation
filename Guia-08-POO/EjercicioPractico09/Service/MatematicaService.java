@@ -13,7 +13,7 @@ import Entidad.Matematica;
  */
 public class MatematicaService {
 
-    public void devolverMayor(Matematica numeros) {
+   public void devolverMayor(Matematica numeros) {
 
         if (numeros.getNum1() == Math.max(numeros.getNum1(), numeros.getNum2())) {
             numeros.setNumMayor(numeros.getNum1());
@@ -27,20 +27,20 @@ public class MatematicaService {
 
     }
 
-    public void calcularPotencia(double numMayor, double numMenor) {
+    public static double calcularPotencia(double numMayor, double numMenor) {
 
         double potencia = Math.pow(Math.round(numMayor), Math.round(numMenor));
 
         System.out.println(Math.round(numMayor) + " elevado por " + Math.round(numMenor) + " es igual " + potencia);
-
+        return potencia;
     }
 
-    public void calcularRaiz(double numMenor) {
+    public static double calcularRaiz(double numMenor) {
 
         double raiz = Math.sqrt(Math.abs(numMenor));
 
         System.out.println("La raíz cuadrada de " + Math.abs(numMenor) + " es igual a " + raiz);
-
+        return raiz;
     }
 
 }
