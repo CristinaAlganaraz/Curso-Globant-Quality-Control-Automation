@@ -64,11 +64,7 @@ public class PersonaService {
 
     public boolean esMayorDeEdad(Persona persona) {
 
-        if (persona.getEdad() >= 18) {
-            return true;
-        } else {
-            return false;
-        }
+        return persona.getEdad() >= 18;
 
     }
 
