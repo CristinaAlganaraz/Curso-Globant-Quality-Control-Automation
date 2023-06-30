@@ -30,7 +30,7 @@ public class EjPOO10 {
         System.out.println(Arrays.toString(arregloA));
         System.out.println("");
         
-        //Muestra en pantalla el arreglo B vacío:
+        //Muestra en pantalla el arreglo B vacío
         System.out.println("Arreglo B antes:");
         System.out.println(Arrays.toString(arregloB));
         System.out.println("");
@@ -41,7 +41,7 @@ public class EjPOO10 {
         System.out.println(Arrays.toString(arregloA));
         System.out.println("");
 
-        //Copia los primeros 10 números del arreglo A al arreglo B, rellena los otros 10 espacios con 0.5 y lo muestra en pantalla
+        //Copia los números del arreglo A al arreglo B, rellena los últimos 10 espacios con 0.5 y lo muestra en pantalla
         System.out.println("Arreglo B después:");
         arregloB = arregloService.copiarNumeros(arregloA, arregloB);
         arregloService.rellenarArreglo(arregloB);
