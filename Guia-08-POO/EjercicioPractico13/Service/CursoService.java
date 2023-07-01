@@ -94,7 +94,7 @@ public class CursoService {
         System.out.println("Cantidad de horas trabajadas diarias: " + curso.getCantidadHorasPorDia());
         System.out.println("Cantidad de días trabajados semanalmente: " + curso.getCantidadDiasPorSemana());
         System.out.println("Turno: " + curso.getTurno().toUpperCase());
-        System.out.println("Precio por hora: " + "$" + curso.getPrecioPorHora());
+        System.out.println("Precio por hora: $" + curso.getPrecioPorHora());
         System.out.println("Cantidad de alumnos: " + curso.getAlumnos().length);
         System.out.println("Nombres de los alumnos: ");
         System.out.println(Arrays.toString(curso.getAlumnos()));
