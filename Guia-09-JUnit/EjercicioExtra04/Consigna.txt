@@ -1,0 +1,7 @@
+
+Analizador de Texto:
+Crea una clase TextAnalyzer que analice un texto y proporcione estadísticas sobre él (por
+ejemplo, número de palabras, número de frases, frecuencia de palabras, etc.).
+Escribe pruebas unitarias para asegurarte de que el analizador de texto proporcione los
+resultados correctos y maneje diferentes escenarios, como texto vacío o texto con caracteres
+especiales.
