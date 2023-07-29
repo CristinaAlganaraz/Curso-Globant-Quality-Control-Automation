@@ -1,0 +1,6 @@
+
+Generador de Contraseñas Seguras:
+Crea una clase SecurePasswordGenerator que genere contraseñas seguras con ciertos
+requisitos (por ejemplo, longitud mínima, combinación de caracteres, etc.).
+Escribe pruebas unitarias para asegurarte de que el generador de contraseñas seguras
+cumpla con los requisitos establecidos y produzca contraseñas seguras.
