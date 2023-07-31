@@ -63,7 +63,7 @@ public class Alquiler {
     @Override
     public String toString() {
         return "Detalle del alquiler:" + '\n'
-                + "Película alquilada: " + titulo + '\n'
+                + "Película alquilada: " + titulo.toUpperCase() + '\n'
                 + "Fecha inicio: " + fechaInicio + '\n'
                 + "Fecha final: " + fechaFin + '\n'
                 + "Precio: $" + precio + '\n';
