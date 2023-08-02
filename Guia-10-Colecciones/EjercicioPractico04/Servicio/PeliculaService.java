@@ -6,6 +6,7 @@
 package Servicio;
 
 import Entidad.Pelicula;
+import Utilidades.PeliculaComparator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -57,12 +58,12 @@ public class PeliculaService {
     }
 
     public List<Pelicula> listarPeliculasPorTitulo() {
-        Collections.sort(listarPeliculas(), new OrdenarPorTitulo());
+        Collections.sort(listarPeliculas(), PeliculaComparator.ordenarPorTitulo);
         return listarPeliculas();
     }
 
     public List<Pelicula> listarPeliculasPorDirector() {
-        Collections.sort(listarPeliculas(), new OrdenarPorDirector());
+        Collections.sort(listarPeliculas(), PeliculaComparator.ordenarPorDirector);
         return listarPeliculas();
     }
 
@@ -83,27 +84,11 @@ public class PeliculaService {
     }
 
     public void mostrarPeliculasDuracionMayorDeUnaHora() {
-        Collections.sort(listarPeliculas(), new OrdenarPorTitulo());
+        Collections.sort(listarPeliculas(), PeliculaComparator.ordenarPorTitulo);
         for (int i = 0; i < listarPeliculas().size(); i++) {
             if (listarPeliculas().get(i).getDuracion() > 1) {
                 System.out.println("- " + listarPeliculas().get(i).toString());
             }
-        }
-    }
-
-    class OrdenarPorTitulo implements Comparator<Pelicula> {
-
-        @Override
-        public int compare(Pelicula a, Pelicula b) {
-            return a.getTitulo().toUpperCase().compareTo(b.getTitulo().toUpperCase());
-        }
-    }
-
-    class OrdenarPorDirector implements Comparator<Pelicula> {
-
-        @Override
-        public int compare(Pelicula a, Pelicula b) {
-            return a.getDirector().toUpperCase().compareTo(b.getDirector().toUpperCase());
         }
     }
 
