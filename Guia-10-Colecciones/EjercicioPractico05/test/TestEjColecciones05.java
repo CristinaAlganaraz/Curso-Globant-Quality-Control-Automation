@@ -57,6 +57,7 @@ public class TestEjColecciones05 {
     @Test
     public void testEliminarPais() {
         ps.agregarPais(new Pais("Perú"));
-        assertTrue(ps.eliminarPais("Perú"));
+        ps.eliminarPais("Perú");
+        assertTrue(ps.listarPaises().isEmpty());
     }
 }
